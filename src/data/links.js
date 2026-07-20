@@ -1,0 +1,16 @@
+export const siteLinks = {
+  home: '#top',
+  proof: '#provas',
+  method: '#metodo',
+  formationsSection: '#formacoes',
+  communitySection: '#comunidade',
+  founder: '#professores',
+  faq: '#faq',
+  enroll: 'https://www.devclub.com.br/#courses',
+  login: 'https://aulas.devclub.com.br/',
+  formations: 'https://www.devclub.com.br/#courses',
+  about: 'https://www.devclub.com.br/sobre/',
+  community: 'https://www.devclub.com.br/comunidade/',
+  support: 'mailto:contato@devclub.com.br',
+  app: '#',
+}

@@ -1,0 +1,71 @@
+.ecosystem-section { position: relative; padding: clamp(105px, 11vw, 165px) 0 clamp(82px, 8vw, 118px); border-top: 1px solid rgba(255,255,255,.06); background: linear-gradient(180deg, #070a08, #050705 75%); }
+.ecosystem-heading { max-width: 860px; }
+.ecosystem-heading > p:last-child { max-width: 650px; }
+.ecosystem-console { position: relative; margin-top: clamp(65px, 8vw, 100px); padding: 62px 16px 16px; border: 1px solid rgba(255,255,255,.12); border-radius: 18px; background: linear-gradient(150deg, rgba(15,20,16,.96), rgba(7,10,8,.96)); box-shadow: 0 35px 85px rgba(0,0,0,.28); }
+.ecosystem-console::before { content: ''; position: absolute; inset: 0; pointer-events: none; border-radius: inherit; background-image: radial-gradient(rgba(53,230,90,.13) .6px, transparent .6px); background-size: 19px 19px; mask-image: linear-gradient(110deg, transparent 20%, black, transparent 78%); opacity: .24; }
+.ecosystem-console__bar { position: absolute; inset: 0 0 auto; height: 46px; padding: 0 16px; display: flex; align-items: center; justify-content: space-between; color: #7f8a82; border-bottom: 1px solid rgba(255,255,255,.08); font: 400 8px var(--font-mono); letter-spacing: .09em; }
+.ecosystem-console__bar span:last-child { display: flex; align-items: center; gap: 7px; }
+.ecosystem-console__bar i { width: 5px; height: 5px; border-radius: 50%; background: #687069; transition: background .4s, box-shadow .4s; }
+.ecosystem-flow { position: absolute; z-index: 0; inset: 62px 16px 60px; width: calc(100% - 32px); height: calc(100% - 122px); pointer-events: none; }
+.ecosystem-flow path { fill: none; stroke: rgba(53,230,90,.56); stroke-width: 1.3; stroke-dasharray: 1; vector-effect: non-scaling-stroke; filter: drop-shadow(0 0 4px rgba(53,230,90,.4)); }
+.ecosystem-modules { position: relative; z-index: 1; margin: 0; padding: 0; display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(205px, .7fr) minmax(230px, .85fr); grid-template-rows: repeat(2, minmax(210px, auto)); grid-template-areas: 'platform app circle' 'platform app whatsapp'; gap: 16px; list-style: none; }
+.ecosystem-module[data-module="platform"] { grid-area: platform; }.ecosystem-module[data-module="app"] { grid-area: app; }.ecosystem-module[data-module="circle"] { grid-area: circle; }.ecosystem-module[data-module="whatsapp"] { grid-area: whatsapp; }
+.ecosystem-module article { height: 100%; min-height: 210px; padding: 24px; display: flex; flex-direction: column; border: 1px solid rgba(255,255,255,.11); border-radius: 13px; background: rgba(10,14,11,.97); transition: transform .4s var(--ease-out), border-color .4s, background .4s, box-shadow .4s; }
+.ecosystem-module article:hover { transform: translateY(-3px); border-color: rgba(53,230,90,.34); background: #0d130f; box-shadow: 0 19px 42px rgba(0,0,0,.28); }
+.ecosystem-module header { display: flex; align-items: center; gap: 10px; }
+.ecosystem-module__icon { width: 36px; height: 36px; flex: 0 0 auto; display: grid; place-items: center; color: var(--color-green); border: 1px solid rgba(53,230,90,.2); border-radius: 9px; background: rgba(53,230,90,.045); }
+.ecosystem-module header div { margin: 0; }
+.ecosystem-module header small, .ecosystem-module header h3 { display: block; }
+.ecosystem-module header small { margin-bottom: 4px; color: #8e9790; font: 400 8px var(--font-mono); }
+.ecosystem-module header h3 { margin: 0; font: 600 11px var(--font-display); letter-spacing: .04em; }
+.ecosystem-module__status { min-height: 25px; margin-left: auto; padding: 0 8px; display: flex; align-items: center; gap: 6px; color: #abb3ad; border: 1px solid rgba(255,255,255,.09); border-radius: 999px; font: 500 7px var(--font-mono); letter-spacing: .06em; }
+.ecosystem-module__status i { width: 5px; height: 5px; border-radius: 50%; background: #69716b; transition: background .4s, box-shadow .4s; }
+.ecosystem-module__display { position: relative; min-height: 106px; margin: 25px 0; border: 1px solid rgba(255,255,255,.075); border-radius: 8px; background: #070a08; overflow: clip; }
+.ecosystem-module__description { max-width: 440px; margin: auto 0 0; color: var(--color-muted); font-size: clamp(.86rem, 1vw, .95rem); line-height: 1.6; }
+.ecosystem-module footer { margin-top: 18px; padding-top: 11px; display: flex; justify-content: space-between; gap: 10px; color: #858e87; border-top: 1px solid rgba(255,255,255,.075); font: 400 7px var(--font-mono); }
+.ecosystem-complete { position: relative; z-index: 2; min-height: 47px; margin-top: 16px; padding: 0 15px; display: flex; align-items: center; gap: 9px; color: #9da69f; border: 1px solid rgba(53,230,90,.14); border-radius: 9px; background: rgba(8,12,9,.92); font: 400 9px var(--font-mono); }
+.ecosystem-complete svg { color: var(--color-green); }
+.ecosystem-complete small { margin-left: auto; color: #858e87; }
+.ecosystem-console.is-synced .ecosystem-console__bar i, .ecosystem-console.is-synced .ecosystem-module__status i { background: var(--color-green); box-shadow: 0 0 8px var(--color-green); }
+.ecosystem-console.is-synced .ecosystem-complete { color: var(--color-green); border-color: rgba(53,230,90,.28); }
+
+[data-module="platform"] article { min-height: 436px; }
+[data-module="platform"] .ecosystem-module__display { min-height: 190px; padding: 18px; display: grid; grid-template-columns: 90px 1fr; grid-template-rows: repeat(3, 1fr); gap: 9px; }
+[data-module="platform"] .ecosystem-module__display span { border: 1px solid rgba(255,255,255,.08); border-radius: 5px; background: linear-gradient(90deg, rgba(53,230,90,.08), rgba(255,255,255,.02)); }
+[data-module="platform"] .ecosystem-module__display span:first-child { grid-row: 1 / -1; background: linear-gradient(180deg, rgba(53,230,90,.09), transparent); }
+[data-module="app"] article { min-height: 436px; border-radius: 22px; box-shadow: inset 0 0 0 3px #070a08; }
+[data-module="app"] .ecosystem-module__display { flex: 1; min-height: 174px; padding: 15px 12px; display: flex; flex-direction: column; gap: 9px; border-radius: 15px; }
+[data-module="app"] .ecosystem-module__display::before { content: ''; width: 36px; height: 3px; margin: -8px auto 6px; border-radius: 3px; background: #303932; }
+[data-module="app"] .ecosystem-module__display span { min-height: 25px; border: 1px solid rgba(255,255,255,.08); border-radius: 5px; }
+[data-module="app"] .ecosystem-module__display span:nth-child(2) { min-height: 48px; background: rgba(53,230,90,.055); }
+[data-module="circle"] .ecosystem-module__display, [data-module="whatsapp"] .ecosystem-module__display { display: flex; align-items: center; gap: 7px; min-height: 44px; margin: 20px 0; border: 0; background: transparent; }
+[data-module="circle"] .ecosystem-module__display span, [data-module="whatsapp"] .ecosystem-module__display span { width: 27px; height: 27px; border: 1px solid rgba(124,58,237,.3); border-radius: 50%; background: rgba(124,58,237,.08); }
+[data-module="circle"] .ecosystem-module__display span:nth-child(2), [data-module="whatsapp"] .ecosystem-module__display span:nth-child(3) { transform: translateY(-7px); }
+[data-module="whatsapp"] .ecosystem-module__display span { border-color: rgba(53,230,90,.25); background: rgba(53,230,90,.055); }
+
+@media (max-width: 900px) {
+  .ecosystem-section { padding-block: 102px 82px; }
+  .ecosystem-console { padding: 62px 12px 12px; }
+  .ecosystem-flow { display: none; }
+  .ecosystem-modules { grid-template-columns: 1fr; grid-template-rows: auto; grid-template-areas: 'platform' 'app' 'circle' 'whatsapp'; }
+  .ecosystem-module article, [data-module="platform"] article, [data-module="app"] article { height: auto; min-height: 0; }
+  [data-module="app"] .ecosystem-module__display { min-height: 190px; flex: none; }
+}
+
+@media (max-width: 480px) {
+  .ecosystem-console { margin-top: 54px; }
+  .ecosystem-console__bar { padding-inline: 12px; }
+  .ecosystem-module article { padding: 19px 16px; }
+  .ecosystem-module header { align-items: flex-start; flex-wrap: wrap; }
+  .ecosystem-module__status { margin-left: 0; }
+  [data-module="platform"] .ecosystem-module__display { min-height: 150px; grid-template-columns: 65px 1fr; padding: 13px; }
+  [data-module="app"] .ecosystem-module__display { min-height: 165px; }
+  .ecosystem-complete { align-items: flex-start; flex-wrap: wrap; padding-block: 13px; }
+  .ecosystem-complete small { width: 100%; margin: 0 0 0 24px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ecosystem-flow path { stroke-dashoffset: 0 !important; }
+  .ecosystem-console__bar i, .ecosystem-module__status i { background: var(--color-green); box-shadow: none; }
+  .ecosystem-complete { color: var(--color-green); border-color: rgba(53,230,90,.28); }
+}
