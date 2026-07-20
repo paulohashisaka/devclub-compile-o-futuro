@@ -2,6 +2,10 @@
 
 > Uma proposta conceitual de redesign da experiência institucional do DevClub.
 
+## Demo
+
+[Visualizar o projeto publicado](https://devclub-compile-o-futuro.vercel.app/)
+
 ## Visão geral
 
 Projeto desenvolvido para o Desafio Full Stack DevClub 2026. A proposta transforma conceitos do universo de desenvolvimento em narrativa, interface e movimento, acompanhando a jornada de aprender, construir, conectar e publicar.
