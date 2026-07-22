@@ -6,21 +6,31 @@ export const footerContent = {
   brand: 'DEVCLUB',
   tagline: 'Compile o futuro.',
   statement: 'Do primeiro código ao próximo deploy.',
-  projectNote: 'Projeto conceitual desenvolvido para o desafio DevClub.',
+  projectNote: 'Projeto conceitual desenvolvido para o Concurso DevClub.',
   signature: 'devclub.session.end()',
   closingSignature: 'future.ready. agora é com você.',
-  authorCredit: 'Concebido e desenvolvido por Paulo Hashisaka para o Desafio Full Stack DevClub · 2026',
+  authorCredit: 'Concebido e desenvolvido por Paulo Hashisaka para o Concurso Full Stack DevClub · 2026.',
   hashtag: '#SangueVerde',
 }
 
 export const footerGroups = [
   {
-    title: 'Navegação',
+    title: 'Jornada',
     links: [
-      { label: 'Formações', href: siteLinks.formationsSection },
+      { label: 'Quem somos', href: siteLinks.aboutSection },
       { label: 'Método', href: siteLinks.method },
-      { label: 'Comunidade', href: siteLinks.communitySection },
-      { label: 'Professores', href: siteLinks.founder },
+      { label: 'Formações', href: siteLinks.formationsSection },
+      { label: 'MBA em IA', href: siteLinks.advancedSection },
+    ],
+  },
+  {
+    title: 'Descobrir',
+    links: [
+      { label: 'Ensino e suporte', href: siteLinks.teachingSection },
+      { label: 'Ecossistema', href: siteLinks.ecosystemSection },
+      { label: 'Histórias', href: siteLinks.storiesSection },
+      { label: 'Mercado', href: siteLinks.marketSection },
+      { label: 'Fundador', href: siteLinks.founder },
       { label: 'FAQ', href: siteLinks.faq },
     ],
   },

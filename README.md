@@ -8,7 +8,7 @@
 
 ## Visão geral
 
-Projeto desenvolvido para o Desafio Full Stack DevClub 2026. A proposta transforma conceitos do universo de desenvolvimento em narrativa, interface e movimento, acompanhando a jornada de aprender, construir, conectar e publicar.
+Projeto desenvolvido para o Concurso Full Stack DevClub 2026. A proposta transforma conceitos do universo de desenvolvimento em narrativa, interface e movimento, acompanhando a jornada de aprender, construir, conectar e publicar.
 
 ## Conceito
 
@@ -80,8 +80,8 @@ npm run build
 
 ## Autoria
 
-Concebido e desenvolvido por Paulo Hashisaka para o Desafio Full Stack DevClub · 2026.
+Concebido e desenvolvido por Paulo Hashisaka para o Concurso Full Stack DevClub · 2026.
 
 ## Aviso
 
-Projeto conceitual desenvolvido exclusivamente para o desafio seletivo. DevClub, sua marca e os materiais institucionais utilizados pertencem aos respectivos titulares.
+Projeto conceitual desenvolvido exclusivamente para o concurso seletivo. DevClub, sua marca e os materiais institucionais utilizados pertencem aos respectivos titulares.

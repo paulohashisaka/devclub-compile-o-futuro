@@ -2,7 +2,7 @@ import { Code2, GraduationCap, Headphones, Users } from 'lucide-react'
 
 export const proofsContent = {
   sectionLabel: 'Diferenciais DevClub',
-  studentCount: '+25 mil alunos',
+  studentCount: 'mais de 15 mil alunos',
 }
 
 export const proofs = [

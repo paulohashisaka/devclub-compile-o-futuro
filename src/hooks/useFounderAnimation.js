@@ -17,7 +17,7 @@ export function useFounderAnimation(scope) {
         })
 
         timeline
-          .from('[data-founder-reveal]', { y: mobile ? 14 : 24, duration: 0.62, stagger: 0.08 })
+          .from('[data-founder-reveal]', { y: mobile ? 14 : 24, force3D: false, duration: 0.62, stagger: 0.08 })
           .from('[data-founder-profile]', { x: mobile ? 0 : 30, y: mobile ? 16 : 0, duration: 0.75 }, '-=0.48')
           .fromTo('[data-founder-scan]', { xPercent: -115 }, { xPercent: 115, duration: 1.05, ease: 'power2.inOut' }, '-=0.45')
       }, scope)

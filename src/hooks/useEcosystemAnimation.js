@@ -17,6 +17,7 @@ export function useEcosystemAnimation(scope) {
 
         gsap.from('[data-ecosystem-header] > *', {
           y: mobile ? 14 : 24,
+          force3D: false,
           duration: 0.65,
           stagger: 0.08,
           ease: 'power3.out',

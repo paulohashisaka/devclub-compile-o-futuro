@@ -23,7 +23,11 @@ export const faqItems = [
     answer: 'Sim. A jornada inclui comunidade no Circle, parceiros de estudo, mentorias e suporte humano por canais como o WhatsApp.',
   },
   {
-    question: 'O DevClub também ajuda na preparação para a carreira?',
+    question: 'O DevClub oferece preparação para o mercado?',
     answer: 'Além da formação técnica, existem conteúdos e experiências voltados para projetos, portfólio, currículo, entrevistas e posicionamento profissional. A contratação depende do desenvolvimento e da dedicação de cada pessoa.',
+  },
+  {
+    question: 'O que é o MBA em Inteligência Artificial?',
+    answer: 'É uma formação avançada em Inteligência Artificial e Automações para Negócios, com diploma reconhecido pelo MEC para quem possui ensino superior completo, conteúdos e certificações internacionais e acesso a ferramentas de IA.',
   },
 ]

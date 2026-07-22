@@ -16,7 +16,7 @@ export function FormationsSection() {
         <div className="formations-grid">
           {formations.map((formation) => <FormationCard formation={formation} key={formation.id} />)}
         </div>
-        <TechnicalHandoff messages={sectionTransitions.formationsToCommunity} />
+        <TechnicalHandoff messages={sectionTransitions.formationsToAdvanced} />
       </div>
     </section>
   )

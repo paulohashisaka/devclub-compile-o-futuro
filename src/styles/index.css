@@ -1,8 +1,12 @@
 @import './tokens.css';
+@import './about.css';
 @import './method.css';
 @import './formations.css';
+@import './advanced-formation.css';
 @import './community.css';
 @import './ecosystem.css';
+@import './stories.css';
+@import './market.css';
 @import './founder.css';
 @import './final-build.css';
 @import './faq.css';
@@ -24,14 +28,44 @@ button { font: inherit; }
   padding-right: calc(var(--page-gutter) + env(safe-area-inset-right));
 }
 .site-shell { isolation: isolate; }
+.about-section,
 .method-section,
 .formations-section,
+.advanced-section,
 .community-section,
 .ecosystem-section,
+.stories-section,
+.market-section,
 .founder-section,
 .final-build-section,
 .faq-section,
 .proof-strip { scroll-margin-top: calc(var(--nav-height) + env(safe-area-inset-top) + 28px); }
+
+@media (min-width: 1440px) {
+  .about-section { padding-top: 146px; }
+  .method-section { padding-block: 158px 91px; }
+  .formations-section { padding-block: 122px 99px; }
+  .advanced-section { padding-block: 138px 99px; }
+  .community-section { padding-block: 148px 99px; }
+  .ecosystem-section { padding-block: 138px 99px; }
+  .stories-section { padding-block: 148px 99px; }
+  .market-section { padding-block: 138px 99px; }
+  .founder-section { padding-block: 150px 97px; }
+  .final-build-section { padding-block: 138px 96px; }
+  .faq-section { padding-block: 138px 151px; }
+  .footer { padding-top: 101px; }
+
+  .about-runtime,
+  .advanced-module,
+  .community-network,
+  .ecosystem-console,
+  .formations-grid,
+  .market-bridge,
+  .stories-grid { margin-top: 82px; }
+
+  .journey-track { margin-top: 108px; }
+  .footer-bottom { margin-top: 76px; }
+}
 
 .section-handoff { position: relative; width: fit-content; min-width: 230px; margin: clamp(52px, 6vw, 76px) auto 0; padding: 13px 16px; display: grid; gap: 6px; color: #7f8981; border: 1px solid rgba(53,230,90,.16); border-radius: 8px; background: #080c09; font: 400 9px var(--font-mono); letter-spacing: .07em; }
 .section-handoff::before, .section-handoff::after { content: ''; position: absolute; left: 50%; width: 1px; height: clamp(52px, 6vw, 76px); background: linear-gradient(180deg, rgba(53,230,90,.12), var(--color-green)); box-shadow: 0 0 9px rgba(53,230,90,.3); }

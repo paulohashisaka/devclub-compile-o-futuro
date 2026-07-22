@@ -15,7 +15,7 @@ export function useJourneyAnimation(scope) {
 
         gsap.from('[data-method-header] > *', {
           y: mobile ? 16 : 26,
-          opacity: 0,
+          force3D: false,
           duration: 0.7,
           stagger: 0.08,
           ease: 'power3.out',

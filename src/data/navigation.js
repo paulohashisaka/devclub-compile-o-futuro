@@ -1,10 +1,11 @@
 import { siteLinks } from './links.js'
 
 export const navigation = [
+  { label: 'Quem somos', href: siteLinks.aboutSection },
   { label: 'Formações', href: siteLinks.formationsSection },
-  { label: 'Método', href: siteLinks.method },
-  { label: 'Comunidade', href: siteLinks.communitySection },
-  { label: 'Professores', href: siteLinks.founder },
+  { label: 'Ensino', href: siteLinks.teachingSection },
+  { label: 'Histórias', href: siteLinks.storiesSection },
+  { label: 'Mercado', href: siteLinks.marketSection },
 ]
 
 export const navigationContent = {

@@ -12,7 +12,7 @@ export function FounderSection() {
   useFounderAnimation(sectionRef)
 
   return (
-    <section className="founder-section" id="professores" ref={sectionRef} aria-labelledby="founder-title">
+    <section className="founder-section" id="fundador" ref={sectionRef} aria-labelledby="founder-title">
       <div className="container">
         <div className="founder-layout">
           <div className="founder-story">
@@ -48,7 +48,7 @@ export function FounderSection() {
               height="501"
               loading="lazy"
               decoding="async"
-              alt="Rodolfo Mori, fundador do DevClub"
+              alt="Rodolfo Mori, fundador, principal professor e criador do método DevClub"
             />
             <div className="founder-profile__lines" aria-hidden="true"><i /><i /><i /></div>
             <footer aria-hidden="true"><span>{founderContent.name}</span><span>{founderContent.assetStatus}</span></footer>

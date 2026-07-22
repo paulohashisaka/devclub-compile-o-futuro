@@ -7,7 +7,7 @@ export const founderContent = {
   titleAccent: 'ele também precisou recomeçar.',
   story: 'Quem já precisou recomeçar sabe como encurtar o caminho. Rodolfo Mori era eletricista no Metrô de São Paulo quando encontrou na programação um caminho para mudar de carreira. Depois de atuar em instituições como Santander, BTG Pactual, PI Investimentos e Toro Investimentos, criou o DevClub para encurtar esse caminho para outras pessoas.',
   name: 'RODOLFO MORI',
-  role: 'Fundador do DevClub',
+  role: 'Fundador, principal professor e criador do método DevClub.',
   profileLabel: 'founder.profile',
   monogram: '<RM />',
   placeholderLabel: 'Espaço preparado para a futura fotografia oficial de Rodolfo Mori.',

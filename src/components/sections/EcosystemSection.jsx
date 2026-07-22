@@ -38,7 +38,7 @@ export function EcosystemSection() {
             <small>{ecosystemModules.length} / {ecosystemModules.length} {ecosystemContent.channelLabel}</small>
           </div>
         </div>
-        <TechnicalHandoff messages={sectionTransitions.ecosystemToFounder} />
+        <TechnicalHandoff messages={sectionTransitions.ecosystemToStories} />
       </div>
     </section>
   )
